@@ -2197,6 +2197,7 @@ footer .foot-bot .crop{
         top: 0;
         left: 0;
         padding-top: 20px;
+        border-radius: 0px 0px 30px 30px;
     }
     header .h-bot input[type="search"]{
         width: 58vw;
