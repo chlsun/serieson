@@ -30,7 +30,14 @@
 .up-btn.active{
     display: flex;
 }
-
+.subheight{
+    display: none;
+    height: 200px;
+    width: 100%;
+}
+.subheight.active{
+    display: block;
+}
 header{
     height: 193px;
     width: 100vw;
@@ -558,6 +565,7 @@ header .h-bot .lr.active{
 .sec-2 .sec2-bg .tab.active{
     display: flex;
 }
+
 .sec-2 .sec2-bg .tab .arrow{
     position: absolute;
     width: 60px;
@@ -598,56 +606,61 @@ header .h-bot .lr.active{
     cursor: pointer;
 } 
 
-.sec-2 .sec2-bg .tab .detail-poster{
+
+.sec-2 .sec2-bg .tab .mySwiper3-2{
+    display: block;
     width: 55%;
-    height: 100%;
+    height: 100%; 
 }
-.sec-2 .sec2-bg .tab .detail-poster .dp{
-    opacity: 1;
-    transition: 0.3s;
-    display: none;
+.sec-2 .sec2-bg .tab .mySwiper3-2 .swiper-wrapper{
+    display: flex;
     align-items: center;
-    margin-right: 20px;
 }
-.sec-2 .sec2-bg .tab .detail-poster .dp .poster{
+.sec-2 .sec2-bg .tab .mySwiper3-2 .swiper-wrapper .swiper-slide{
+    width: 100%;
     height: 100%;
-    width: 16.38vw;
+    display: flex;
+}
+.sec-2 .sec2-bg .tab .mySwiper3-2 .swiper-wrapper .swiper-slide .poster{
+    height: 100%;
+    width: 45%;
     cursor: pointer;
 }
-.sec-2 .sec2-bg .tab .detail-poster .dp .txt-box1{
-    width: 58%;
+.sec-2 .sec2-bg .tab .mySwiper3-2 .txt-box1{
+    width: 50%;
     height: 100%;
-    padding: 30px 20px;
+    padding: 5% 5%;
     display: flex;
+    background-color: #EEFFEA;
     flex-direction: column;
 }
-.sec-2 .sec2-bg .tab .detail-poster .dp .txt-box1 h1{
+.sec-2 .sec2-bg .tab .mySwiper3-2 .txt-box1 h1{
     font-size: 1.875rem;
     font-weight: 600;
     color: #1a1a1e;
-    margin-bottom: 2.08vw;
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    margin-bottom: 10%;
 }
-.sec-2 .sec2-bg .tab .detail-poster .dp .txt-box1 .name{
+.sec-2 .sec2-bg .tab .mySwiper3-2 .txt-box1 .name{
     font-size: 1rem;
     color: #686868;
-    margin-bottom: 0.2vw;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-bottom: 2%;
 }
-.sec-2 .sec2-bg .tab .detail-poster .dp .txt-box1 .grade{
+.sec-2 .sec2-bg .tab .mySwiper3-2 .txt-box1 .grade{
     font-size: 1rem;
     font-weight: 500;
-    margin-top:1vw;
-    margin-left: 8px;
+    margin-top: 2%;
     position: relative;
+    margin-left: 8px;
 }
-.sec-2 .sec2-bg .tab .detail-poster .dp .txt-box1 .grade::before{
+.sec-2 .sec2-bg .tab .mySwiper3-2 .txt-box1 .grade::before{
     content: '';
     display: block;
     width: 17px;
@@ -659,27 +672,24 @@ header .h-bot .lr.active{
     top: 50%;
     transform: translateY(-50%);
 }
-.sec-2 .sec2-bg .tab .detail-poster .dp .txt-box1 .price{
+.sec-2 .sec2-bg .tab .mySwiper3-2 .txt-box1 .price{
     font-size: 1.125rem;
     font-weight: 500;
-    margin-top:1vw;
+    margin-top: 4%;
 }
-.sec-2 .sec2-bg .tab .detail-poster .dp .txt-box1 .detail{
+.sec-2 .sec2-bg .tab .mySwiper3-2 .txt-box1 .detail{
     display: block;
     display: -webkit-box;
     overflow: hidden;
     margin-top: 1vw;
-    font-size: 0.875rem;
+    font-size: 1rem;
     color: #1a1a1e;
-    height: 100%;
     width: 100%;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
-}   
-
-.sec-2 .sec2-bg .tab .detail-poster .dp.active{
-    display: flex;
+    line-height: 1.1em;
 }
+
 .sec-2 .sec2-bg .tab .mySwiper3{
     height: 100%;
     width: 45%;
@@ -719,9 +729,6 @@ header .h-bot .lr.active{
     font-size: 0.875rem;
     font-weight: 500;
 }
-.sec-2 .sec2-bg .tab .mySwiper3-2{
-    display: none;
-}
 
 .sec-3,
 .sec-5{
@@ -754,6 +761,7 @@ header .h-bot .lr.active{
     justify-content: space-between;
     margin-top: auto;
 }
+
 .sec-3 .sec3-header .calendar .arrow{
     width: 20px;
     height: 26px;
@@ -1907,9 +1915,6 @@ footer .foot-bot .crop{
         position: relative;
         margin-left: 4.895vw;
     }
-    .sec-2 .sec2-bg .tab .detail-poster{
-        display: none;
-    }
     .sec-2 .sec2-bg .tab .mySwiper3{
         display: none;
     }
@@ -2191,8 +2196,7 @@ footer .foot-bot .crop{
         position: fixed;
         top: 0;
         left: 0;
-        height: 150px;
-        padding-top: 55px;
+        padding-top: 20px;
     }
     header .h-bot input[type="search"]{
         width: 58vw;
@@ -2296,6 +2300,17 @@ footer .foot-bot .crop{
     }   
 }
 @media(max-width:375px){
+    .sec-1 .sec1-bg .arrow,
+    .sec-2 .sec2-bg .tab .arrow,
+    .sec-3 .sec3-header .calendar .arrow{
+        display: none;
+    }
+    header .h-bot990.active{
+        margin-top: 10px;
+    }
+    header.active .h-top{
+        display: none;
+    }
     header .h-top .logo990{
         display: block;
         height: 28px;
@@ -2365,7 +2380,7 @@ footer .foot-bot .crop{
         border-radius: 10px;
     }
     .sec-2 .sec2-tab990 .menu{
-        font-size: 1.25rem;
+        font-size: 1.125rem;
         margin-right: 2.2vw;
     }
 
@@ -2487,5 +2502,20 @@ footer .foot-bot .crop{
         background-color: #646464;
         display: flex;
         align-items: center;
+    }
+    .sec-1 .tab990 .menu{
+        font-size: 1.25rem;
+    }
+    .sec-1 .tab990 .menu{
+        margin-right: 0;
+    }
+    .sec-2 .sec2-tab990 .menu{
+        margin-right: 0;
+    }
+    .sec-1 .tab990{
+        justify-content: space-between;
+    }
+    .sec-2 .sec2-tab990{
+        justify-content: space-between;
     }
 }
