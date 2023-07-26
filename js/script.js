@@ -25,56 +25,132 @@ $(document).ready(function(){
         },
     });
 
-    var swiper = new Swiper(".mySwiper2", {
-        slidesPerView: 3,
+    var ww = $(window).width();
+
+    if(ww > 375){
+        var swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            slidesPerGroup: 1,        
+        
+            navigation: {
+                nextEl: ".r-arrow2",
+                prevEl: ".l-arrow2",
+            },
+            breakpoints:{
+                1380:{
+                    slidesPerView: 3,
+                    spaceBetween: 88,
+                    slidesPerGroup: 1,        
+                },
+                1000:{
+                    spaceBetween: 60,
+                },
+                545:{
+                    spaceBetween: 40,
+                },
+                376:{
+                    slidesPerView: 3,
+                }
+            },
+        });
+    }else{
+        var swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            slidesPerGroup: 1,        
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            }
+        });
+    }
+
+    
+    
+
+    var swiper = new Swiper(".mySwiper3-2", {
+        slidesPerView: 1,
         spaceBetween: 20,
         slidesPerGroup: 1,        
+        loop: true,
 
         navigation: {
             nextEl: ".r-arrow2",
             prevEl: ".l-arrow2",
         },
-        breakpoints:{
-            1380:{
-                slidesPerView: 3,
-                spaceBetween: 88,
-                slidesPerGroup: 1,        
-            },
-            1000:{
-                spaceBetween: 60,
-            },
-            545:{
-                spaceBetween: 40,
-            }
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
         },
     });
 
-    var swiper = new Swiper(".mySwiper3", {
-        slidesPerView: 2,
-        spaceBetween: 40,
-        slidesPerGroup: 1,
-        loop: true,
-        navigation: {
-            nextEl: ".r-arrow3",
-            prevEl: ".l-arrow3",
-        },
-        observer: true,
-        observeParents: true,
-    });
-    var swiper = new Swiper(".mySwiper3-2", {
-        effect: "fade",
-        slidesPerView: 1,
-        spaceBetween: 0,
-        slidesPerGroup: 1,
-        loop: true,
-        navigation: {
-            nextEl: ".r-arrow3",
-            prevEl: ".l-arrow3",
-        },
-        observer: true,
-        observeParents: true,
-    });
+   
+
+    var count = 1;
+    var boxcount = 6;
+    var tt = 250;
+    var result = 0;
     
+
+    $('.l-arrow3').click(function(){
+        if(ww <= 1620){
+            tt = 211;
+        }
+
+        if(count == 1){
+            count = 6;
+        }else{
+            count = count -1;
+        }
+
+        if(boxcount == 1){
+            boxcount = 6;
+        }else{
+            boxcount = boxcount -1;
+        }
+
+        result = tt * boxcount;
+
+        $('.swiper-view .content-box1 .box').removeClass('active');
+        $(`.swiper-view .content-box1 .box${count}`).addClass('active');
+
+        $('.sec-2 .cb').css({
+            'transform':'translateX(' + -result + 'px)'
+        });
+    });
+
+    $('.r-arrow3').click(function(){
+        if(ww <= 1170){
+            tt = 152;
+        }else if(ww <= 1410){
+            tt = 184;
+        }else if(ww <= 1620){
+            tt = 211;
+        }
+
+        if(count == 6){
+            count = 1;
+        }else{
+            count = count +1;
+        }
+
+        if(boxcount == 10){
+            boxcount = 5;
+        }else{
+            boxcount = boxcount + 1;
+        }
+
+        result = tt * boxcount;
+
+        $('.swiper-view .content-box1 .box').removeClass('active');
+        $(`.swiper-view .content-box1 .box${count}`).addClass('active');
+
+        $('.sec-2 .cb').css({
+            'transform':'translateX('+ -result + 'px)'
+        });
+    });
 
 
     var swiper = new Swiper(".mySwiper4", {

@@ -39,7 +39,6 @@
     display: block;
 }
 header{
-    height: 193px;
     width: 100vw;
     padding: 65px 17.7%;
     border-radius: 0px 0px 60px 60px;
@@ -159,7 +158,6 @@ header.active{
     position: fixed;
     top: 0;
     left: 0;
-    height: 100px;
     padding: 30px 17.7%;
     border-radius: 0px 0px 50px 50px;
     border: none;
@@ -544,29 +542,29 @@ header .h-bot .lr.active{
     font-weight: 500;
 }
 .sec-2 .sec2-bg{
-    margin-left: 13vw;
-    height: 31.875vw;
-    width: 87vw;
-    border-radius: 5.2vw 0px 0px 5.2vw;
+    margin-left: 220px;
+    height: 600px;
+    width: 1700px;
+    border-radius: 100px 0px 0px 100px;
     background-color: #EEFFEA;
     display: flex;
     align-items: center;
     margin-top: 85px;
+    position: relative;
 }
 
 .sec-2 .sec2-bg .tab{
-    width: 63.02vw;
-    height: 23.437vw;
+    width: 100%;
+    height: 100%;
     display: none;
     align-items: center;
-    position: relative;
-    margin-left: 4.895vw;
+    margin-left: 70px;
 }
 .sec-2 .sec2-bg .tab.active{
     display: flex;
 }
 
-.sec-2 .sec2-bg .tab .arrow{
+.sec-2 .sec2-bg .arrow{
     position: absolute;
     width: 60px;
     height: 60px;
@@ -581,34 +579,166 @@ header .h-bot .lr.active{
     transition: 0.3s;
 }
 
-.sec-2 .sec2-bg .tab .l-arrow3{
-    left: -3%;
+.sec-2 .sec2-bg .l-arrow3{
+    left: 2%;
     z-index: 99;
 }
 
-.sec-2 .sec2-bg .tab .r-arrow3{
-    right: -2.1%;
+.sec-2 .sec2-bg .r-arrow3{
+    right: 20.5%;
     z-index: 99;
 }
 
-.sec-2 .sec2-bg .tab .l-arrow3 svg{
+.sec-2 .sec2-bg .l-arrow3 svg{
     height: 35px;
     width: 35px;
     transform: rotate(180deg);
 }
-.sec-2 .sec2-bg .tab .r-arrow3 svg{
+.sec-2 .sec2-bg .r-arrow3 svg{
     height: 35px;
     width: 35px;
 }
 
-.sec-2 .sec2-bg .tab:hover .arrow{
+.sec-2 .sec2-bg:hover .arrow{
     opacity: 0.8;
     cursor: pointer;
 } 
 
+.sec-2 .sec2-bg .tab .swiper-view{
+    display: block;
+    width: 750px;
+    height: 500px; 
+    overflow: hidden;
+}
+.sec-2 .sec2-bg .tab .swiper-view .content-box1{
+    width: 100%;
+    height: 100%;
+}
+.sec-2 .sec2-bg .tab .swiper-view .content-box1 .box{
+    display: none;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.sec-2 .sec2-bg .tab .swiper-view .content-box1 .box.active{
+    display: flex;
+}
+.sec-2 .sec2-bg .tab .swiper-view .content-box1 .box .poster{
+    height: 100%;
+    width: 47%;
+}
+.sec-2 .sec2-bg .tab .swiper-view .content-box1 .box .txt-box1{
+    padding: 10% 0px 10% 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 51%;
+    margin-left: 2%;
+    margin-right: 1%;
+}
+.sec-2 .sec2-bg .tab .swiper-view .txt-box1 h1{
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: #1a1a1e;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 10%;
+}
+.sec-2 .sec2-bg .tab .swiper-view .txt-box1 .name{
+    font-size: 1rem;
+    color: #686868;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 2%;
+}
+.sec-2 .sec2-bg .tab .swiper-view .txt-box1 .grade{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 2%;
+    position: relative;
+    margin-left: 8px;
+}
+.sec-2 .sec2-bg .tab .swiper-view .txt-box1 .grade::before{
+    content: '';
+    display: block;
+    width: 17px;
+    height: 16px;
+    background: url(../img/svg/yellowstar.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    left: -18px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sec-2 .sec2-bg .tab .swiper-view .txt-box1 .price{
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-top: 4%;
+}
+.sec-2 .sec2-bg .tab .swiper-view .txt-box1 .detail{
+    display: block;
+    display: -webkit-box;
+    overflow: hidden;
+    margin-top: 1vw;
+    font-size: 1rem;
+    color: #1a1a1e;
+    width: 100%;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    line-height: 1.1em;
+}
+
+
+.sec-2 .sec2-bg .tab .swiper-view2{
+    /* 480px */
+    height: 80%;
+    width: 500px;
+    /* overflow: hidden; */
+    display: flex;
+}
+.sec-2 .sec2-bg .tab .swiper-view2 .cb{
+    display: flex;
+    transform: translateX(-1500px);
+    /* transition: 0.3s; */
+}
+.sec-2 .sec2-bg .tab .swiper-view2 .cb .box{
+    margin-top: auto;
+    width: 240px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec-2 .sec2-bg .tab .swiper-view2 .cb img{
+    width: 100%;
+    height: 350px;
+    cursor: pointer;
+}
+.sec-2 .sec2-bg .tab .swiper-view2 .cb h3{
+    text-align: center;
+    width: 100%;
+    margin-top: 6px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.sec-2 .sec2-bg .tab .swiper-view2 .cb .grade2{
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+.sec-2 .sec2-bg .tab .swiper-view2 .cb .price2{
+    font-size: 0.875rem;
+    font-weight: 500;
+}
 
 .sec-2 .sec2-bg .tab .mySwiper3-2{
-    display: block;
+    display: none;
     width: 55%;
     height: 100%; 
 }
@@ -688,46 +818,6 @@ header .h-bot .lr.active{
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     line-height: 1.1em;
-}
-
-.sec-2 .sec2-bg .tab .mySwiper3{
-    height: 100%;
-    width: 45%;
-    overflow: hidden;
-}
-.sec-2 .sec2-bg .tab .mySwiper3 .swiper-wrapper{
-    width: 250%;
-    height: 100%;
-    display: flex;
-}
-.sec-2 .sec2-bg .tab .mySwiper3 .swiper-wrapper .swiper-slide{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.sec-2 .sec2-bg .tab .mySwiper3 .swiper-wrapper .swiper-slide img{
-    width: 11.65vw;
-    height: 16.66vw;
-    margin-top: auto;
-    cursor: pointer;
-}
-.sec-2 .sec2-bg .tab .mySwiper3 .swiper-wrapper .swiper-slide h3{
-    text-align: center;
-    width: 100%;
-    margin-top: 6px;
-    font-size: 0.875rem;
-    font-weight: 600;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-.sec-2 .sec2-bg .tab .mySwiper3 .swiper-wrapper .swiper-slide .grade2{
-    font-size: 0.875rem;
-    font-weight: 500;
-}
-.sec-2 .sec2-bg .tab .mySwiper3 .swiper-wrapper .swiper-slide .price2{
-    font-size: 0.875rem;
-    font-weight: 500;
 }
 
 .sec-3,
@@ -1404,6 +1494,7 @@ footer .foot-bot .crop{
     cursor: pointer;
 }
 
+/* 0.84375 */
 @media(max-width:1620px){
     header .h-top{
         margin-right: -5vw;
@@ -1437,6 +1528,30 @@ footer .foot-bot .crop{
     .sec-2 .sec2-header{
         padding: 0px 17.7% 0px 13.7%;
     }
+    .sec-2 .sec2-bg{
+        margin-left: 140px;
+        height: 506px;
+        width: 1434px;
+    }
+    .sec-2 .sec2-bg .tab .swiper-view{
+        width: 632px;
+        height: 422px;
+    }
+    .sec-2 .sec2-bg .tab .swiper-view2{
+        width: 422px;
+    }
+    .sec-2 .sec2-bg .tab .swiper-view2 .cb .box{
+        width: 201px;
+        margin-right: 10px;
+    }
+    .sec-2 .sec2-bg .tab .swiper-view2 .cb img{
+        width: 100%;
+        height: 295px;
+        cursor: pointer;
+    }
+    .sec-2 .sec2-bg .tab .swiper-view2 .cb{
+        transform: translateX(-1266px);
+    }
     .sec-3,
     .sec-5{
         padding: 0px 17.7% 0px 13.7%;
@@ -1461,6 +1576,7 @@ footer .foot-bot .crop{
         font-size: 14px;
     }
 }
+
 
 @media(max-width:1410px){
     .sec-2 .sec2-bg .tab .detail-poster .dp .txt-box1 .grade::before{
@@ -1495,6 +1611,35 @@ footer .foot-bot .crop{
     .sec-2 .sec2-header .plus{
         line-height: 36px;
     }
+    /* 0.734375 */
+    .sec-2 .sec2-bg{
+        margin-left: 120px;
+        height: 440px;
+        width: 1248px;
+    }
+    .sec-2 .sec2-bg .tab .swiper-view{
+        width: 550px;
+        height: 368px;
+    }
+    .sec-2 .sec2-bg .tab .swiper-view2{
+        width: 368px;
+    }
+    .sec-2 .sec2-bg .tab .swiper-view2 .cb .box{
+        width: 176px;
+        margin-right: 8px;
+    }
+    .sec-2 .sec2-bg .tab .swiper-view2 .cb img{
+        width: 100%;
+        height: 257px;
+        cursor: pointer;
+    }
+    .sec-2 .sec2-bg .tab .swiper-view2 .cb{
+        transform: translateX(-1104px);
+    }
+    .sec-2 .sec2-bg .r-arrow3{
+        right: 18%;
+    }
+
     .sec-3 .movies .content .poster .ygrade p::before{
         width: 14px;
         height: 13px;
@@ -1622,22 +1767,6 @@ footer .foot-bot .crop{
         white-space: nowrap;
         text-overflow: ellipsis;
     }
-    .sec-2 .sec2-bg .tab .detail-poster .dp .txt-box1 .detail{
-        -webkit-line-clamp: 3;
-        margin-bottom: 0.3vw;
-    }
-    .sec-2 .sec2-bg .tab .detail-poster .dp .txt-box1 h1{
-        margin-bottom: 0.3vw;
-    }
-    .sec-2 .sec2-bg .tab .detail-poster .dp .txt-box1 .name{
-        margin-bottom: 0.3vw;
-    }
-    .sec-2 .sec2-bg .tab .detail-poster .dp .txt-box1 .grade{
-        margin-bottom: 0.3vw;
-    }
-    .sec-2 .sec2-bg .tab .detail-poster .dp .txt-box1 .price{
-        margin-bottom: 0.3vw;
-    }
     .sec-2 .sec2-header .sec2-tab li{
         line-height: 40px;
     }
@@ -1646,13 +1775,43 @@ footer .foot-bot .crop{
         height: 5px;
         top: 4px;
     }
+    /* 0.609375 */
+    .sec-2 .sec2-bg{
+        margin-left: 94px;
+        height: 365px;
+        width: 1036px;
+    }
+    .sec-2 .sec2-bg .tab .swiper-view{
+        width: 457px;
+        height: 304px;
+    }
+    .sec-2 .sec2-bg .tab .swiper-view2{
+        width: 304px;
+    }
+    .sec-2 .sec2-bg .tab .swiper-view2 .cb .box{
+        width: 144px;
+        margin-right: 8px;
+    }
+    .sec-2 .sec2-bg .tab .swiper-view2 .cb img{
+        width: 100%;
+        height: 213px;
+        cursor: pointer;
+    }
+    .sec-2 .sec2-bg .tab .swiper-view2 .cb{
+        transform: translateX(-912px);
+    }
+    .sec-2 .sec2-bg .r-arrow3{
+        right: 18%;
+    }
 }
 @media(max-width:990px){
     header{
-        height: 220px;
-        padding: 40px 10%;
+        padding: 30px 10%;
         /* padding */
         border-radius: 0px 0px 50px 50px;
+    }
+    header.active{
+        padding: 30px 10%;
     }
     header .h-top{
         width: 100%;
@@ -1740,7 +1899,6 @@ footer .foot-bot .crop{
     header.active{
         padding: 30px 10%;
     }
-
     .banner .swiper{
         margin-left: 8vw;
         height: 30vw;
@@ -1861,6 +2019,10 @@ footer .foot-bot .crop{
         height: 14vw;
         border-radius: 20px;
     }
+    .sec-2 .sec2-bg .tab .swiper-view,
+    .sec-2 .sec2-bg .tab .swiper-view2{
+        display: none;
+    }
 
     .sec-2 .sec2-header{
         padding: 0px 10%;
@@ -1914,9 +2076,6 @@ footer .foot-bot .crop{
         align-items: center;
         position: relative;
         margin-left: 4.895vw;
-    }
-    .sec-2 .sec2-bg .tab .mySwiper3{
-        display: none;
     }
     
     .sec-2 .sec2-bg .tab .mySwiper3-2{
@@ -2000,20 +2159,20 @@ footer .foot-bot .crop{
         -webkit-box-orient: vertical;
         line-height: 1.1em;
     }   
-    .sec-2 .sec2-bg .tab .arrow{
+    .sec-2 .sec2-bg .arrow{
         width: 40px;
         height: 40px;
     }
-    .sec-2 .sec2-bg .tab .l-arrow3 svg,
-    .sec-2 .sec2-bg .tab .r-arrow3 svg{
+    .sec-2 .sec2-bg .l-arrow3 svg,
+    .sec-2 .sec2-bg .r-arrow3 svg{
         height: 26px;
         width: 26px;
     }
-    .sec-2 .sec2-bg .tab .l-arrow3{
+    .sec-2 .sec2-bg .l-arrow3{
         left: -4%;
     }
     
-    .sec-2 .sec2-bg .tab .r-arrow3{
+    .sec-2 .sec2-bg .r-arrow3{
         right: -2.1%;
     }
 
@@ -2352,7 +2511,6 @@ footer .foot-bot .crop{
         padding-left: 24px;
     }
     header{
-        height: 200px;
         border-radius: 0px 0px 40px 40px;
     }
     .banner{
@@ -2518,5 +2676,59 @@ footer .foot-bot .crop{
     }
     .sec-2 .sec2-tab990{
         justify-content: space-between;
+    }
+    header{
+        border-radius: 0px 0px 26px 26px;
+        padding: 20px 16px;
+    }
+    header.active{
+        padding: 20px 16px;
+    }
+    .surve-menu{
+        padding: 0px 16px;
+    }
+    .sec-1 .tab990{
+        padding: 0px 16px;
+    }
+    .sec-1 .event{
+        margin-top: 20px;
+        padding: 30px 16px 0px 16px;
+    }
+    .sec-2 .sec2-header{
+        padding: 0px 16px;
+    }
+    .sec-2 .sec2-tab990{
+        padding: 0px 16px;
+    }
+    .sec-3,
+    .sec-5{
+        padding: 0px 16px;
+    }
+    .sec-4{
+        padding: 50px 16px;
+    }
+    footer .foot-top{
+        padding: 0px 16px;
+    }
+    footer .foot-bot{
+        padding: 40px 16px;
+    }
+    header .h-top ul li{
+        font-size: 0.875rem;
+    }
+    .sec-1{
+        padding-top: 30px;
+        background-color: #f5fcf3;
+    }
+    .sec-1 .event{
+        background-color: #ffffff;
+    }
+    .sec-1 .sec1-bg{
+        margin-left: 8vw;
+        height: 64vw;
+        width: 92vw;
+    }
+    header .h-bot input[type="search"].active{
+        width: 60vw;
     }
 }
