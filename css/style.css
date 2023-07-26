@@ -697,7 +697,7 @@ header .h-bot .lr.active{
     /* 480px */
     height: 80%;
     width: 500px;
-    /* overflow: hidden; */
+    overflow: hidden;
     display: flex;
 }
 .sec-2 .sec2-bg .tab .swiper-view2 .cb{
@@ -2721,7 +2721,7 @@ footer .foot-bot .crop{
     }
     .sec-1{
         padding-top: 30px;
-        background-color: #f5fcf3;
+        background-color: #EEFFEA;
     }
     .sec-1 .event{
         background-color: #ffffff;
@@ -2736,5 +2736,8 @@ footer .foot-bot .crop{
     }
     .sec-2 .sec2-bg{
         border-radius: 30px 0px 0px 30px;
+    }
+    .sec-2 .sec2-bg .arrow{
+        display: none;
     }
 }
