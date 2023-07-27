@@ -199,31 +199,36 @@ header .h-bot .lr.active{
 .banner .slide1{
     width: 100%;
     height: 100%;
-    background: url(../img/banner1-1.png) no-repeat center right;
+    background: url(../img/banner1-1.png) no-repeat center;
+    background-position: left;
     background-size: cover;
 }
 .banner .slide2{
     width: 100%;
     height: 100%;
-    background: url(../img/banner/banner2.PNG) no-repeat center right;
+    background: url(../img/banner/banner2.PNG) no-repeat center;
+    background-position: left;
     background-size: cover;
 }
 .banner .slide3{
     width: 100%;
     height: 100%;
-    background: url(../img/banner/banner3.PNG) no-repeat center right;
+    background: url(../img/banner/banner3.PNG) no-repeat center;
+    background-position: left;
     background-size: cover;
 }
 .banner .slide4{
     width: 100%;
     height: 100%;
-    background: url(../img/banner/banner4.PNG) no-repeat center right;
+    background: url(../img/banner/banner4.PNG) no-repeat center;
+    background-position: left;
     background-size: cover;
 }
 .banner .slide5{
     width: 100%;
     height: 100%;
-    background: url(../img/banner/banner5.PNG) no-repeat center right;
+    background: url(../img/banner/banner5.PNG) no-repeat center;
+    background-position: left;
     background-size: cover;
 }
 
@@ -306,6 +311,7 @@ header .h-bot .lr.active{
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.1);
 }
 .surve-menu .menu span{
+    margin-top: 7px;
     font-size: 1rem;
     font-weight: 500;
     text-align: center;
@@ -702,8 +708,8 @@ header .h-bot .lr.active{
 }
 .sec-2 .sec2-bg .tab .swiper-view2 .cb{
     display: flex;
-    transform: translateX(-1500px);
     /* transition: 0.3s; */
+    transform: translateX(-1500px);
 }
 .sec-2 .sec2-bg .tab .swiper-view2 .cb .box{
     margin-top: auto;
@@ -1901,7 +1907,7 @@ footer .foot-bot .crop{
     }
     .banner .swiper{
         margin-left: 8vw;
-        height: 30vw;
+        height: 35vw;
         width: 92vw;
     }
     .banner .swiper-menu{
@@ -2318,6 +2324,7 @@ footer .foot-bot .crop{
         height: 50px;
     }
     .surve-menu .menu span{
+        margin-top: 5px;
         width: 50px;
     }
     .sec-2 .sec2-bg .tab .mySwiper3-2 .txt-box1{
@@ -2500,7 +2507,7 @@ footer .foot-bot .crop{
         width: 150px;
     }
     header .h-top ul li:nth-child(even){
-        margin-top: auto;
+        margin-top: 4px;
         height: 10px;
     }
     header .h-bot .logo.active{
@@ -2525,6 +2532,7 @@ footer .foot-bot .crop{
         border-radius: 10px;
     }
     .surve-menu .menu span{
+        margin-top: 4px;
         width: 40px;
     }
     .sec-1 .tab990 .menu{
@@ -2626,6 +2634,10 @@ footer .foot-bot .crop{
         margin-top: 4%;
         line-height: 1.1em;
     }
+    .sec-4 .content .cont .cont-detail{
+        margin-left: 6px;
+        text-align: left;
+    }
     .sec-4 .content .cont{
         height: 45vw;
     }
@@ -2721,7 +2733,7 @@ footer .foot-bot .crop{
     }
     .sec-1{
         padding-top: 30px;
-        background-color: #EEFFEA;
+        background-color: #f5fcf3;
     }
     .sec-1 .event{
         background-color: #ffffff;

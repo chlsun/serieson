@@ -27,6 +27,22 @@ $(document).ready(function(){
 
     var ww = $(window).width();
 
+    // if(ww > 375){
+        
+    // }else{
+    //     var swiperE = new Swiper(".mySwiperE", {
+    //         slidesPerView: 1,
+    //         spaceBetween: 20,
+    //         slidesPerGroup: 1,
+    //         loop: true,
+
+    //         autoplay: {
+    //             delay: 3000,
+    //             disableOnInteraction: false
+    //         }
+    //     });
+    // }
+
     if(ww > 375){
         var swiper2 = new Swiper(".mySwiper2", {
             slidesPerView: 3,
@@ -95,7 +111,11 @@ $(document).ready(function(){
     
 
     $('.l-arrow3').click(function(){
-        if(ww <= 1620){
+        if(ww <= 1170){
+            tt = 152;
+        }else if(ww <= 1410){
+            tt = 184;
+        }else if(ww <= 1620){
             tt = 211;
         }
 
@@ -120,6 +140,8 @@ $(document).ready(function(){
             'transform':'translateX(' + -result + 'px)'
         });
     });
+
+
 
     $('.r-arrow3').click(function(){
         if(ww <= 1170){
@@ -151,6 +173,8 @@ $(document).ready(function(){
             'transform':'translateX('+ -result + 'px)'
         });
     });
+
+    // $('.swiper-view .content-box1').find('box').first().apandTo('.swiper-view .content-box1');
 
 
     var swiper = new Swiper(".mySwiper4", {
